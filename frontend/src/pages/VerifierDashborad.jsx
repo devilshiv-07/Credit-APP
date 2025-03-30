@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 const VerifierDashborad = () => {
   return (
     <section className='h-[100vh] w-screen bg-[#efefef]'>
-      <Navbar profile="verifier"/>
+      <Navbar profile="Verifier"/>
     </section>
   )
 }

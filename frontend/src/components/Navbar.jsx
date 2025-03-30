@@ -18,7 +18,7 @@ const Navbar = ({ profile }) => {
       </div>
 
       {/* User Icons */}
-      {profile === "user" ? (
+      {profile === "User" ? (
         <div className="flex gap-6 text-[#4d7f67] font-[600] text-lg">
           <div className="flex justify-center items-center gap-2 text-[#0a512f]">
             <IoIosSpeedometer className="text-2xl" />
@@ -40,11 +40,11 @@ const Navbar = ({ profile }) => {
       ) : null}
 
       {/* Profile and notification */}
-      <div className="flex gap-4 text-[#4d7f67] font-[600] text-lg justify-center items-center">
+      <div className={`flex gap-4 ${profile === "User" ? "text-[#4d7f67]" : "text-[#0a512f]"} font-[600] text-lg justify-center items-center`}>
         <BsBellFill />
         <AiFillMessage />
         <FaCircleUser />
-        <h1>User</h1>
+        <h1>{profile}</h1>
         <FaSortDown className="mt-[-8px]" />
       </div>
     </div>
